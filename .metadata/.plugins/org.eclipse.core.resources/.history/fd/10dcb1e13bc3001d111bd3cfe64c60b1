@@ -20,6 +20,5 @@ public class DetecteurBC {
 	public void affichage(Graphics g) {
 		/* Personnage_d'accueil */
 		g.drawImage(detecteurBC, xBC, yBC);
-		,l,l
 	}
 }
