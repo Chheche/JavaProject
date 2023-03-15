@@ -1,0 +1,13 @@
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.SlickException;
+
+public class Main {
+
+	public static void main(String[] args) throws SlickException {
+		MonJeu monjeu = new MonJeu("Dragon Ball");
+		AppGameContainer app = new AppGameContainer(DragonBall);
+		app.setDisplayMode(1050, 700, false);
+		app.start();
+	}
+
+}

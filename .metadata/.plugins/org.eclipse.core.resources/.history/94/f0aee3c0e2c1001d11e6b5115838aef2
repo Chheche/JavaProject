@@ -1,0 +1,6 @@
+import org.newdawn.slick.Image;
+
+public class KaioShin {
+	private double x,y;
+	private Image kaioShin;
+}

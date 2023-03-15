@@ -1,0 +1,14 @@
+
+public class Socle {
+	private float x, y;
+
+	public Socle() {
+		if (x >= 0 && x <= 1050 && y >= 0 && y <= 700) {
+			this.x = x;
+			this.y = y;
+		} else {
+			this.x = 0;
+			this.y = 0;
+		}
+	}
+}

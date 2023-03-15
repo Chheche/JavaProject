@@ -1,0 +1,25 @@
+import org.newdawn.slick.Color;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.SlickException;
+
+public class KaioShin {
+	private float xK, yK;
+	private Image kaioShin;
+
+	public KaioShin(int x, int y, Image kaioShin) throws SlickException {
+		if (x >= 0 && x <= 1050 && y >= 0 && y <= 700) {
+			this.x = x;
+			this.y = y;
+		} else {
+			this.x = 0;
+			this.y = 0;
+		}
+		kaioShin = new Image("images/kaioShin.png");
+	}
+
+	public void affichage(Graphics g) {
+		/* Personnage_d'accueil */
+		g.drawImage(kaioShin, x, y);
+	}
+}

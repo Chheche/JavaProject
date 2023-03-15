@@ -1,0 +1,24 @@
+import org.newdawn.slick.Color;
+import org.newdawn.slick.Graphics;
+
+public class Socle {
+	private float x, y;
+
+	public Socle() {
+		if (x >= 0 && x <= 1050 && y >= 0 && y <= 700) {
+			this.x = x;
+			this.y = y;
+		} else {
+			this.x = 0;
+			this.y = 0;
+		}
+	}
+	
+	public void affichage(Graphics g) {
+		/* Personnage_d'accueil */
+		g.setColor(Color.gray);
+		g.fillOval(990, 10, 25, 25);
+		g.setColor(Color.black);
+		g.drawOval(990, 10, 25, 25);
+	}
+}
